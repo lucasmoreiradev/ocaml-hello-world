@@ -1,0 +1,11 @@
+(executable
+ (name hello_world)
+ (modes native byte)
+ (public_name hello_world))
+
+ (rule
+  (alias runtest)
+  (deps ./hello_world.bc)
+  (targets )
+  (action 
+   (run ./hello_world.bc)))
